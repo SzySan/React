@@ -1,0 +1,47 @@
+.food-item{
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: 0.3s;
+  animation: fadeIn 1s;
+  border-radius: 15px;
+  box-shadow: 0px 0px 10px black;
+
+}
+.food-item-image {
+    width: 220px;  /* Set the desired width */
+    height: 220px; /* Set the desired height */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    border-radius: 15px 15px 0px 0px; /* Optional: to give images rounded corners */
+}
+
+.add {
+    width: 24px;  /* Set the desired width for the add icon */
+    height: 24px; /* Set the desired height for the add icon */
+    cursor: pointer; /* Optional: change cursor to pointer to indicate it's clickable */
+    position: absolute;
+    bottom: -12px; /* Adjust position to be below the image */
+    left: calc(50% - 12px);  /* Center the icon horizontally */
+  }
+  
+  .food-item-info {
+    padding: 10px;
+  }
+  
+  .food-item-restaurant,
+  .food-item-desc,
+  .food-item-price {
+    margin: 5px 0;
+  }
+.food-item-img-container{
+    position: relative;
+}
+.food-item-img-container .add{
+    width: 35px;
+    position:absolute;
+    bottom: 15px;
+    right: 15px;
+    cursor: pointer;
+    border-radius: 50%;
+}
